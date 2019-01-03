@@ -1,0 +1,79 @@
+.Header {
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Header.selected {
+  height: 300px;
+  transition: height 0.3s 0.5s;
+}
+
+.Header-list {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  text-align: center;
+}
+
+.Header-list-item {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+}
+
+.Header-list-item:hover {
+  cursor: pointer;
+  flex: 1.2;
+}
+
+.Header-list-item:hover.code,
+.Header.selected .Header-list-item.selected.code {
+  background-color: #2d692d;
+}
+
+.Header-list-item:hover.vids,
+.Header.selected .Header-list-item.selected.vids {
+  background-color: #8f1b11;
+}
+
+.Header-list-item:hover.health,
+.Header.selected .Header-list-item.selected.health {
+  background-color: #2358b3;
+}
+
+.Header-list-item:hover.me,
+.Header.selected .Header-list-item.selected.me {
+  background-color: #e28b36;
+}
+
+.Header.selected .Header-list-item:not(.selected) {
+  flex-grow: 0;
+  width: 0;
+}
+
+.Header:not(.selected) .Header-close-button {
+  display: none;
+}
+
+.Header-close-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
