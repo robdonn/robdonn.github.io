@@ -86,17 +86,17 @@
   right: 2rem;
 }
 
-.Header-list-logo {
+.Header-list-item > svg {
   width: 200px;
   fill: white;
   pointer-events: none;
 }
 
-.Header-list-logo #robdonn {
+.Header-list-item > svg #robdonn {
   display: none;
 }
 
-.Header-list-item:hover .Header-list-logo #robdonn,
-.Header-list-item.selected .Header-list-logo #robdonn {
+.Header-list-item:hover > svg #robdonn,
+.Header-list-item.selected > svg #robdonn {
   display: block;
 }
