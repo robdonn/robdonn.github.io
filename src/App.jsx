@@ -4,7 +4,7 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    sections: ["Code", "Vids", "Health"]
+    sections: ["Code", "Vids", "Blog"]
   };
   render() {
     const { sections } = this.state;

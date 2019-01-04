@@ -3,12 +3,12 @@ import "./Header.css";
 
 import { ReactComponent as Code } from "./SVG/code.svg";
 import { ReactComponent as Vids } from "./SVG/vids.svg";
-import { ReactComponent as Health } from "./SVG/health.svg";
+import { ReactComponent as Blog } from "./SVG/blog.svg";
 
 const icons = {
   Code,
   Vids,
-  Health
+  Blog
 };
 
 export class Header extends Component {

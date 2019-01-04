@@ -61,8 +61,8 @@
   background-color: #8f1b11;
 }
 
-.Header-list-item:hover.health,
-.Header.selected .Header-list-item.selected.health {
+.Header-list-item:hover.blog,
+.Header.selected .Header-list-item.selected.blog {
   background-color: #2358b3;
 }
 
