@@ -117,6 +117,7 @@
     ]
   },
   "devDependencies": {
+    "favicons": "^5.3.0",
     "gh-pages": "^2.0.1"
   }
 }
