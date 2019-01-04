@@ -10,7 +10,7 @@
 }
 
 .Header.selected {
-  height: 300px;
+  height: 30vh;
   transition: height 0.3s 0.5s;
 }
 
@@ -25,6 +25,14 @@
   align-content: stretch;
   justify-content: center;
   text-align: center;
+
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .Header-list {
+    flex-direction: row;
+  }
 }
 
 .Header-list-item {
@@ -38,7 +46,7 @@
   transition: all 0.3s;
 }
 
-.Header-list-item:hover {
+.Header-list-item:hover:not(.selected) {
   cursor: pointer;
   flex: 1.2;
 }
@@ -76,4 +84,19 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
+}
+
+.Header-list-logo {
+  width: 200px;
+  fill: white;
+  pointer-events: none;
+}
+
+.Header-list-logo #robdonn {
+  display: none;
+}
+
+.Header-list-item:hover .Header-list-logo #robdonn,
+.Header-list-item.selected .Header-list-logo #robdonn {
+  display: block;
 }
