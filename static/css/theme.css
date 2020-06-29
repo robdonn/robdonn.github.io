@@ -1,11 +1,25 @@
 :root {
   --theme-color-primary: rgb(45, 85, 76);
   --theme-color-contrast: rgb(202, 248, 238);
+  --theme-drop-shadow-colour: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --theme-color-primary: rgb(202, 248, 238);
-    --theme-color-contrast: rgb(13, 48, 40);
+    --theme-color-primary: #d2d2d2;
+    --theme-color-contrast: #1b1b1b;
+    --theme-drop-shadow-colour: black;
   }
+}
+
+#theme-select-light:checked ~ .content-wrapper {
+  --theme-color-primary: rgb(45, 85, 76);
+  --theme-color-contrast: rgb(202, 248, 238);
+  --theme-drop-shadow-colour: rgb(145, 177, 170);
+}
+
+#theme-select-dark:checked ~ .content-wrapper {
+  --theme-color-primary: #d2d2d2;
+  --theme-color-contrast: #1b1b1b;
+  --theme-drop-shadow-colour: black;
 }

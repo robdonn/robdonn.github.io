@@ -4,23 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robert Donnelly - Software Engineer</title>
-    <meta name="description" content="Robert Donnelly is a Software Engineer from Ireland who specialises in JavaScript application architecture in browser and server environments.">
+    <meta
+      name="description"
+      content="Robert Donnelly is a Software Engineer from Ireland who specialises in JavaScript application architecture in browser and server environments."
+    />
     <link href="/static/css/main.css" rel="stylesheet" preload />
-    <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="icon" 
-      type="image/png" 
-      href="/static/icons/favicon.png">
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="/static/icons/favicon.png" />
   </head>
   <body>
-    <section class="header">
-      <div class="title">
-        <h1 class="title__text">robdonn</h1>
-        <ul class="title__list">
-          <li>Dad</li>
-          <li>Smart-ass</li>
-          <li>Software Engineer</li>
-        </ul>
+    <input
+      id="theme-select-auto"
+      value="auto"
+      type="radio"
+      name="theme"
+      checked
+    />
+    <input id="theme-select-light" value="light" type="radio" name="theme" />
+    <input id="theme-select-dark" value="dark" type="radio" name="theme" />
+    <div class="content-wrapper">
+      <div class="theme-select">
+        <label for="theme-select-auto" id="theme-select-auto-label">Auto</label>
+        <label for="theme-select-light" id="theme-select-light-label"
+          >Light</label
+        >
+        <label for="theme-select-dark" id="theme-select-dark-label">Dark</label>
       </div>
-    </section>
+      <section class="header">
+        <div class="title">
+          <h1 class="title__text">robdonn</h1>
+          <ul class="title__list">
+            <li>Dad</li>
+            <li>Smart-ass</li>
+            <li>Software Engineer</li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
