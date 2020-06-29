@@ -1,0 +1,11 @@
+:root {
+  --theme-color-primary: rgb(45, 85, 76);
+  --theme-color-contrast: rgb(202, 248, 238);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color-primary: rgb(202, 248, 238);
+    --theme-color-contrast: rgb(13, 48, 40);
+  }
+}

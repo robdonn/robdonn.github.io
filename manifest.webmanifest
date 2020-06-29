@@ -1,0 +1,22 @@
+{
+  "short_name": "robdonn",
+  "name": "Robert Donnelly - Software Engineer",
+  "description": "Robert Donnelly is a Software Engineer from Ireland who specialises in JavaScript application architecture in browser and server environments.",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/static/icons/rd_icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/icons/rd_icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "rgb(202, 248, 238)",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "rgb(202, 248, 238)"
+}
