@@ -19,7 +19,6 @@ body {
 .content-wrapper {
   position: relative;
   background: var(--theme-color-background-contrast);
-  height: 20000px;
 }
 
 .header {
