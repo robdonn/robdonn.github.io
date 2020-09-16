@@ -1,25 +1,29 @@
 :root {
-  --theme-color-primary: rgb(45, 85, 76);
-  --theme-color-contrast: rgb(202, 248, 238);
-  --theme-drop-shadow-colour: black;
+  --theme-color-primary: #4ed2ff;
+  --theme-color-background: #f0f3f7;
+  --theme-color-background-contrast: #e4e9f8;
+  --theme-color-text: #47505a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --theme-color-primary: #d2d2d2;
-    --theme-color-contrast: #1b1b1b;
-    --theme-drop-shadow-colour: black;
+    --theme-color-primary: #ee3254;
+    --theme-color-background: #191e2d;
+    --theme-color-background-contrast: #0f1423;
+    --theme-color-text: #7e818a;
   }
 }
 
 #theme-select-light:checked ~ .content-wrapper {
-  --theme-color-primary: rgb(45, 85, 76);
-  --theme-color-contrast: rgb(202, 248, 238);
-  --theme-drop-shadow-colour: rgb(145, 177, 170);
+  --theme-color-primary: #4ed2ff;
+  --theme-color-background: #f0f3f7;
+  --theme-color-background-contrast: #e4e9f8;
+  --theme-color-text: #47505a;
 }
 
 #theme-select-dark:checked ~ .content-wrapper {
-  --theme-color-primary: #d2d2d2;
-  --theme-color-contrast: #1b1b1b;
-  --theme-drop-shadow-colour: black;
+  --theme-color-primary: #ee3254;
+  --theme-color-background: #191e2d;
+  --theme-color-background-contrast: #0f1423;
+  --theme-color-text: #7e818a;
 }
