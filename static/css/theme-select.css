@@ -46,6 +46,7 @@ input[name='theme'] {
   flex: 1;
   z-index: 1;
   align-self: center;
+  color: var(--theme-color-primary-contrast);
 }
 
 input#theme-select-light:checked ~ .content-wrapper .theme-select::before {

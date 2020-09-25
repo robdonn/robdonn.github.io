@@ -1,13 +1,12 @@
 @import './theme.css';
 @import './theme-select.css';
+@import './header.css';
+@import './courses.css';
 
 * {
   box-sizing: border-box;
+  color: var(--theme-color-text);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-#svg-sprite {
-  display: none;
 }
 
 body {
@@ -21,77 +20,14 @@ body {
   background: var(--theme-color-background-contrast);
 }
 
-.header {
+.center-content {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 1rem;
-  height: 100vh;
-  max-height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+.card {
   background: var(--theme-color-background);
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 0.6rem;
   overflow: hidden;
-  padding-bottom: 2rem;
-}
-
-.title__text {
-  color: var(--theme-color-primary);
-  text-align: center;
-  font-size: 16vw;
-  margin: 0 0 0.2em;
-  text-shadow: 0 0 20px var(--theme-color-background-contrast);
-}
-
-.title__list {
-  color: var(--theme-color-text);
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-}
-
-.title__list li {
-  align-self: center;
-}
-
-@media screen and (max-width: 309px) {
-  .title__list > li:not(:first-child)::before {
-    content: '-';
-    text-align: center;
-    display: block;
-    padding: 0.03em 0 0;
-  }
-}
-
-@media screen and (min-width: 310px) {
-  .title__list {
-    flex-direction: row;
-  }
-
-  .title__list > li:not(:first-child)::before {
-    content: '|';
-    padding: 0 0.3em;
-  }
-}
-
-@media screen and (min-width: 901px) {
-  .header {
-    height: auto;
-  }
-
-  .title__text {
-    font-size: 5vw;
-  }
-
-  .title__list {
-    font-size: 1.3vw;
-  }
 }

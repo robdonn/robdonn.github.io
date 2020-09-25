@@ -8,11 +8,19 @@
       name="description"
       content="Robert Donnelly is a Software Engineer from Ireland who specialises in JavaScript application architecture in browser and server environments."
     />
-    <link href="/static/css/main.css" rel="stylesheet" preload />
+    <link href="/static/css/theme.css" rel="preload" as="style" />
+    <link href="/static/css/theme-select.css" rel="preload" as="style" />
+    <link href="/static/css/header.css" rel="preload" as="style" />
+    <link href="/static/css/courses.css" rel="preload" as="style" />
+    <link href="/static/css/main.css" rel="preload" as="style" />
+
+    <link href="/static/css/main.css" rel="stylesheet" />
+
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" type="image/png" href="/static/icons/favicon.png" />
   </head>
   <body>
+    <!-- Theme selector hidden inputs -->
     <input
       id="theme-select-auto"
       value="auto"
@@ -22,7 +30,10 @@
     />
     <input id="theme-select-light" value="light" type="radio" name="theme" />
     <input id="theme-select-dark" value="dark" type="radio" name="theme" />
+
+    <!-- Content -->
     <div class="content-wrapper">
+      <!-- Theme selector toggle -->
       <div class="theme-select">
         <label for="theme-select-auto" id="theme-select-auto-label">Auto</label>
         <label for="theme-select-light" id="theme-select-light-label"
@@ -30,6 +41,8 @@
         >
         <label for="theme-select-dark" id="theme-select-dark-label">Dark</label>
       </div>
+
+      <!-- Header -->
       <section class="header">
         <div class="title">
           <h1 class="title__text">robdonn</h1>
@@ -39,6 +52,48 @@
             <li>Software Engineer</li>
           </ul>
         </div>
+      </section>
+
+      <!-- Courses -->
+      <section class="courses center-content">
+        <h2 class="courses-title">Courses</h2>
+
+        <ul class="courses-list">
+          <li class="card">
+            <div class="course-container">
+              <div
+                class="course-image"
+                style="
+                  background-image: url(static/img/course-monorepo-beginners.jpg);
+                "
+              ></div>
+              <div class="course-content">
+                <h3 class="course-title">Monorepos - A Beginners Guide</h3>
+                <p>
+                  Have you ever wondered how large companies and open source
+                  libraries manage their ever-expanding codebases? Monorepos are
+                  one the most popular development strategies for reducing
+                  duplication, keeping product dependencies up to date and
+                  publishing all of your updates simultaneously.
+                </p>
+
+                <p>
+                  This course will get you started on learning what a Monorepo
+                  is, how they work in a JavaScript ecosystem and which tools
+                  are available to get your new project up and running.
+                </p>
+                <a
+                  href="#"
+                  class="course-link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Coming soon
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
     </div>
   </body>

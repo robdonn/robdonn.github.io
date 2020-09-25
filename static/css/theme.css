@@ -1,5 +1,6 @@
 :root {
-  --theme-color-primary: #4ed2ff;
+  --theme-color-primary: #3155dc;
+  --theme-color-primary-contrast: #f0f3f7;
   --theme-color-background: #f0f3f7;
   --theme-color-background-contrast: #e4e9f8;
   --theme-color-text: #47505a;
@@ -15,7 +16,7 @@
 }
 
 #theme-select-light:checked ~ .content-wrapper {
-  --theme-color-primary: #4ed2ff;
+  --theme-color-primary: #3155dc;
   --theme-color-background: #f0f3f7;
   --theme-color-background-contrast: #e4e9f8;
   --theme-color-text: #47505a;
