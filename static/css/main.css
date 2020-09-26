@@ -20,6 +20,7 @@ body {
   position: relative;
   background: var(--theme-color-background-contrast);
   padding-bottom: calc(116px + 1rem);
+  min-height: 100vh;
 }
 
 .center-content {
