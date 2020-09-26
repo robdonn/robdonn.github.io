@@ -2,6 +2,7 @@
 @import './theme-select.css';
 @import './header.css';
 @import './courses.css';
+@import './footer.css';
 
 * {
   box-sizing: border-box;
@@ -18,6 +19,7 @@ body {
 .content-wrapper {
   position: relative;
   background: var(--theme-color-background-contrast);
+  padding-bottom: calc(116px + 1rem);
 }
 
 .center-content {
