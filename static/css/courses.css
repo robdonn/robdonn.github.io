@@ -8,16 +8,6 @@
   color: var(--theme-color-primary);
 }
 
-.course-link {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: var(--theme-color-primary);
-  color: var(--theme-color-primary-contrast);
-  padding: 0.8rem 2rem;
-  border-radius: 0.6rem;
-}
-
 .course-container {
   display: flex;
   flex-direction: column;
