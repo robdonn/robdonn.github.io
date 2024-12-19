@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kid Zoom</title>
+    <!-- Style block to display frames in 2x2 -->
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        grid-template-areas:
+          "webcam picture1"
+          "picture2 picture3";
+      }
+      .frame {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+      }
+      #webcam {
+        grid-area: webcam;
+        width: 100%;
+        height: 100%;
+      }
+      #picture1 {
+        grid-area: picture1;
+        width: 100%;
+        height: 100%;
+      }
+      #picture2 {
+        grid-area: picture2;
+        width: 100%;
+        height: 100%;
+      }
+      #picture3 {
+        grid-area: picture3;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 4 picture frames, like a zoom call, except the top left is a webcam view of the user -->
+    <div class="container">
+      <div class="frame">
+        <!-- Display webcam here -->
+        <video  id="webcam" autoplay playsinline></video>
+      </div>
+      <div class="frame">
+        <img id="picture1" />
+      </div>
+      <div class="frame">
+        <img id="picture2" />
+      </div>
+      <div class="frame">
+        <img id="picture3" />
+      </div>
+      <script>var video = document.querySelector("#webcam");
+
+        if (navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+              video.srcObject = stream;
+            })
+            .catch(function (err0r) {
+              console.log("Something went wrong!");
+            });
+        }</script>
+  </body>
+</html>
