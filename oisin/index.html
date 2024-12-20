@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kid Zoom</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100vw;
+        height: 100vh;
+        gap: 0.6rem;
+        background-color: powderblue;
+      }
+
+      .grid-item {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .media {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <video class="media" id="webcam" autoplay playsinline></video>
+      </div>
+      <div class="grid-item">
+        <img class="media" src="./baby.jpg" alt="Baby" />
+      </div>
+      <div class="grid-item">
+        <img class="media" src="./rex.jpg" alt="Rex" />
+      </div>
+      <div class="grid-item">
+        <img class="media" src="./steg.jpg" alt="Steg" />
+      </div>
+    </div>
+
+    <script>
+      var video = document.querySelector('#webcam');
+
+      if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices
+          .getUserMedia({ video: true })
+          .then(function (stream) {
+            video.srcObject = stream;
+          })
+          .catch(function (err0r) {
+            console.log('Something went wrong!');
+          });
+      }
+    </script>
+  </body>
+</html>
